@@ -21,6 +21,7 @@ I18n.backend = GettextI18nRails::Backend.new
 
 # make I18n play nice with FastGettext
 require 'gettext_i18n_rails/i18n_hacks'
+require 'gettext_i18n_rails/fast_gettext_hacks'
 
 # translate activerecord errors
 if defined? Rails::Railtie # Rails 3+
